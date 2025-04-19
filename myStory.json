@@ -1,0 +1,129 @@
+{
+    "Title": "Phas map",
+    "Credits": "Charles Li",
+    "InitialLocation": "Van",
+    "Locations": {
+        "Van": {
+            "Body": "Choose two items to bring into the house to find the ghost type.",
+            "Choices": [
+                {
+                    "Text": "Bring UV light",
+                    "Item": "UV Light"
+                },
+                {
+                    "Text": "Bring thermometer",
+                    "Item": "Thermometer"
+                },
+                {
+                    "Text": "Bring video camera",
+                    "Item": "Video Camera"
+                },
+                {
+                    "Text": "Hallway",
+                    "Target": "Hallway"
+                },
+                {
+                    "Text": "Leave",
+                    "Target": "Leave"
+                }
+                
+            ]
+        },
+        "Hallway": {
+            "Body": "Hallway",
+            "Choices": [
+                {
+                    "Text": "Bedroom",
+                    "Target": "Bedroom"
+                },
+                {
+                    "Text": "Bathroom",
+                    "Target": "Bathroom"
+                },
+                {
+                    "Text": "Living Room",
+                    "Target": "LivingRoom"
+                },
+                {
+                    "Text": "Closet",
+                    "Target": "Closet"
+                },
+                {
+                    "Text": "Van",
+                    "Target": "Van"
+                }
+            ]
+        },
+        "Bedroom": {
+            "Body": "Bedroom ",
+            "Choices": [
+                {
+                    "Text": "Hallway",
+                    "Target": "Hallway"
+                }
+            ]
+        },
+        "Bathroom": {
+            "Body": "Bathroom",
+            "Choices": [
+                {
+                    "Text": "Hallway",
+                    "Target": "Hallway"
+                }
+            ]
+        },
+        "Kitchen": {
+            "Body": "Kitchen.",
+            "Choices": [
+                {
+                    "Text": "Living Room",
+                    "Target": "LivingRoom"
+                }
+            ]
+        },
+        "LivingRoom": {
+            "Scene": "RadioRoom",
+            "Body": "Living Room with a radio on a table.",
+            "Choices": [
+                {
+                    "Text": "Kitchen",
+                    "Target": "Kitchen"
+                },
+                {
+                    "Text": "Basement",
+                    "Target": "Basement",
+                    "Needs": "Basement Key"
+                },
+                {       
+                    "Text": "Hallway",
+                    "Target": "Hallway"
+                }
+            ]
+        },
+        "Closet": {
+            "Body": "Closet, but you find a key.",
+            "Choices": [
+                {
+                    "Text": "Hallway",
+                    "Target": "Hallway"
+                },
+                {
+                    "Text": "Unlock Basement",
+                    "UnlockBasement": true
+                }   
+            ]
+        },
+        "Basement": {
+            "Body": "Basement",
+            "Choices": [
+                {
+                    "Text": "Living Room",
+                    "Target": "LivingRoom"
+                }
+            ]
+        },
+        "Leave": {
+            "Body": "You have left"
+        }
+    }
+}
